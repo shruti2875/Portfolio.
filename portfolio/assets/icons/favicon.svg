@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SS logo">
+  <rect width="64" height="64" rx="16" fill="#111111"/>
+  <path d="M18 18h10.5C35 18 40 23 40 29.5S35 41 28.5 41H18z" fill="#ffffff"/>
+  <path d="M18 41h28v5H18z" fill="#a1a1aa"/>
+</svg>

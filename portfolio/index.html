@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shruti Shejul — Full Stack Developer, Software Engineer, and Open Source Contributor building real-world software solutions." />
+  <meta name="keywords" content="Shruti Shejul, portfolio, software engineer, full stack developer, open source, web development" />
+  <meta name="author" content="Shruti Shejul" />
+  <meta property="og:title" content="Shruti Shejul — Software Engineer" />
+  <meta property="og:description" content="Full Stack Developer building real-world software solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Shruti Shejul Portfolio" />
+  <meta name="theme-color" content="#000000" />
+  <title>Shruti Shejul — Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Navbar -->
+  <nav id="nav">
+    <a href="#home" class="nav-logo">SS<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="./assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer" data-resume-link>Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:shrutishejul30@gmail.com" class="nav-cta">Let's talk</a>
+    <button class="nav-menu" aria-label="menu" id="menuBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-label">Available for opportunities</div>
+        <h1 class="hero-name">
+          <span class="line">SHRUTI</span>
+          <span class="line">SHEJUL</span>
+        </h1>
+        <p class="hero-tagline">
+          <strong>Building Intelligent Solutions with AI/ML</strong><br>
+          Leveraging artificial intelligence, machine learning, and software engineering to transform complex challenges into innovative, data-driven solutions that create real-world impact.
+        </p>
+        <div class="hero-actions">
+          <a href="./assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-resume-link>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 10v6m0 0l-3-3m3 3l3-3M3 17v3a2 2 0 002 2h14a2 2 0 002-2v-3"/><path d="M16 6l-4-4-4 4"/><path d="M12 2v10"/></svg>
+            Resume
+          </a>
+          <a href="https://github.com/shruti2875" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/shrutishejul" target="_blank" rel="noopener" class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="#contact" class="btn btn-ghost">Contact</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-orb-wrap">
+          <div class="orb-glow"></div>
+          <canvas id="hero3d" width="420" height="420"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">About</div>
+      <div class="about-grid">
+        <div class="reveal">
+          <h2 class="about-headline">Engineering<br><em>tomorrow's</em><br>solutions today.</h2>
+          <div class="about-stats">
+            <div class="stat-cell"><div class="num">3rd</div><div class="lbl">Year BTech, CGPA 7.07</div></div>
+            <div class="stat-cell"><div class="num">2+</div><div class="lbl">Projects shipped</div></div>
+            <div class="stat-cell"><div class="num">5+</div><div class="lbl">Certifications</div></div>
+            <div class="stat-cell"><div class="num">OSS</div><div class="lbl">Open Source contributor</div></div>
+          </div>
+        </div>
+        <div class="about-text reveal reveal-delay-2">
+          <p>I'm <strong>Shruti Shejul</strong>, a 3rd-year Computer Science student at Deogiri Institute of Engineering &amp; Management Studies, Chh. Sambhajinagar. I build full stack applications, contribute to open source, and solve real-world engineering challenges.</p>
+          <p>My work spans from AI-powered coding assistants to women's safety systems — each project designed with both technical rigor and human impact in mind. I believe software engineering is as much about empathy as it is about efficiency.</p>
+          <p>I'm driven by the intersection of <strong>machine learning</strong>, <strong>full stack development</strong>, and <strong>systems thinking</strong>. Always shipping, always learning.</p>
+          <div class="about-badges">
+            <span class="badge">Full Stack Dev</span>
+            <span class="badge">Open Source</span>
+            <span class="badge">ML Enthusiast</span>
+            <span class="badge">Problem Solver</span>
+            <span class="badge">Cloud Computing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">Tech Stack</div>
+      <div class="skills-grid reveal">
+        <div class="skill-cat"><div class="skill-cat-label">Languages</div><div class="skill-items"><div class="skill-item"><span class="skill-dot"></span>Java</div><div class="skill-item"><span class="skill-dot"></span>Python</div><div class="skill-item"><span class="skill-dot"></span>JavaScript</div><div class="skill-item"><span class="skill-dot"></span>C</div><div class="skill-item"><span class="skill-dot"></span>SQL</div></div></div>
+        <div class="skill-cat"><div class="skill-cat-label">Frontend</div><div class="skill-items"><div class="skill-item"><span class="skill-dot"></span>React</div><div class="skill-item"><span class="skill-dot"></span>Next.js</div><div class="skill-item"><span class="skill-dot"></span>Tailwind CSS</div><div class="skill-item"><span class="skill-dot"></span>HTML / CSS</div></div></div>
+        <div class="skill-cat"><div class="skill-cat-label">Backend</div><div class="skill-items"><div class="skill-item"><span class="skill-dot"></span>Node.js</div><div class="skill-item"><span class="skill-dot"></span>Express.js</div></div></div>
+        <div class="skill-cat"><div class="skill-cat-label">Database</div><div class="skill-items"><div class="skill-item"><span class="skill-dot"></span>MongoDB</div><div class="skill-item"><span class="skill-dot"></span>MySQL</div></div></div>
+        <div class="skill-cat"><div class="skill-cat-label">Tools &amp; AI</div><div class="skill-items"><div class="skill-item"><span class="skill-dot"></span>Git / GitHub</div><div class="skill-item"><span class="skill-dot"></span>OpenAI API</div><div class="skill-item"><span class="skill-dot"></span>Google Cloud</div><div class="skill-item"><span class="skill-dot"></span>VS Code</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <div class="projects-intro reveal">
+        <h2>Work that<br><em style="font-style:normal;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.35)">speaks</em> for itself.</h2>
+        <p>Each project is a focused attempt to solve a real problem — built with production-grade thinking and shipped with care.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal"><div class="project-visual"><div class="project-visual-inner"><div class="project-icon">AI</div></div><svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.04" viewBox="0 0 400 180"><text x="20" y="40" fill="white" font-family="JetBrains Mono,monospace" font-size="11">def generate_code(prompt):</text><text x="20" y="60" fill="white" font-family="JetBrains Mono,monospace" font-size="11">  response = openai.chat(</text><text x="20" y="80" fill="white" font-family="JetBrains Mono,monospace" font-size="11">    model="gpt-4",</text><text x="20" y="100" fill="white" font-family="JetBrains Mono,monospace" font-size="11">    messages=[{"role":"user",</text><text x="20" y="120" fill="white" font-family="JetBrains Mono,monospace" font-size="11">      "content": prompt}]</text><text x="20" y="140" fill="white" font-family="JetBrains Mono,monospace" font-size="11">  return response.choices[0].text</text></svg></div><div class="project-num">01 / 04</div><div class="project-title">CodeGennie</div><p class="project-desc">AI-powered coding assistant that generates, debugs, and optimizes code in real time. Features multi-language support, prompt engineering for response accuracy, and a responsive UI.</p><div class="project-stack"><span class="tech-tag">Python</span><span class="tech-tag">OpenAI API</span><span class="tech-tag">Prompt Engineering</span></div><div class="project-links"><a href="https://github.com/shruti2875" target="_blank" rel="noopener" class="project-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>Source</a><a href="#" class="project-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live demo</a></div></div>
+        <div class="project-card reveal reveal-delay-1"><div class="project-visual"><div class="project-visual-inner"><div class="project-icon">SOS</div></div><svg style="position:absolute;inset:0;width:100%;height:100%;opacity:.05" viewBox="0 0 400 180"><circle cx="200" cy="90" r="50" fill="none" stroke="white" stroke-width="1"/><circle cx="200" cy="90" r="30" fill="none" stroke="white" stroke-width="1"/><circle cx="200" cy="90" r="10" fill="white"/><line x1="200" y1="10" x2="200" y2="40" stroke="white" stroke-width="1"/><line x1="200" y1="140" x2="200" y2="170" stroke="white" stroke-width="1"/><line x1="120" y1="90" x2="150" y2="90" stroke="white" stroke-width="1"/><line x1="250" y1="90" x2="280" y2="90" stroke="white" stroke-width="1"/></svg></div><div class="project-num">02 / 04</div><div class="project-title">Safe Haven</div><p class="project-desc">Women's safety &amp; emergency system with real-time SOS alerts, live location tracking via Google Maps API, and emergency contact management. Built for impact.</p><div class="project-stack"><span class="tech-tag">Web</span><span class="tech-tag">Android</span><span class="tech-tag">Google Maps API</span><span class="tech-tag">GPS</span></div><div class="project-links"><a href="https://github.com/shruti2875" target="_blank" rel="noopener" class="project-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>Source</a><a href="#" class="project-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Live demo</a></div></div>
+        <div class="project-card reveal reveal-delay-2"><div class="project-visual"><div class="project-visual-inner"><div class="project-icon">INV</div></div></div><div class="project-num">03 / 04</div><div class="project-title">Smart Inventory</div><p class="project-desc">Inventory optimization platform using data structures &amp; algorithms for efficient tracking and restocking. Reduces overhead and prevents stockouts with algorithmic forecasting.</p><div class="project-stack"><span class="tech-tag">Java</span><span class="tech-tag">Data Structures</span><span class="tech-tag">Algorithms</span><span class="tech-tag">MySQL</span></div><div class="project-links"><a href="https://github.com/shruti2875" target="_blank" rel="noopener" class="project-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>Source</a></div></div>
+        <div class="project-card reveal reveal-delay-3"><div class="project-visual"><div class="project-visual-inner"><div class="project-icon" style="font-size:38px;">TIFAN</div></div></div><div class="project-num">04 / 04</div><div class="project-title">Sapling Plantation Machine</div><p class="project-desc">Award-winning innovation at TIFAN 2025. Designed an automated sapling plantation machine combining mechanical engineering with software control — recognized for real-world agricultural impact.</p><div class="project-stack"><span class="tech-tag">Innovation</span><span class="tech-tag">Hardware</span><span class="tech-tag">Automation</span><span class="tech-tag">AgriTech</span></div><div class="project-links"><span class="project-link" style="color:#f4d03f;font-size:11px;">🏆 TIFAN Innovation Award 2025</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label">Experience</div>
+      <div class="exp-grid">
+        <div class="exp-nav reveal">
+          <p class="exp-nav-label">Journey<br>&amp; milestones.</p>
+          <p style="color:var(--muted);font-size:14px;line-height:1.7;margin-top:20px;">A growing record of building, contributing, and innovating — from academic projects to real-world recognition.</p>
+        </div>
+        <div class="exp-timeline">
+          <div class="exp-item reveal"><div class="exp-badge"><span class="exp-badge-dot"></span>Active</div><div class="exp-period">2023 — Present</div><div class="exp-role">BTech Student — Computer Science</div><div class="exp-org">Deogiri Institute of Engineering &amp; Management Studies</div><ul class="exp-desc"><li>Core CS curriculum: DSA, DBMS, OS, Machine Learning</li><li>Built full-stack projects integrating AI and web technologies</li><li>Completed 5+ certifications including Cisco AI, Generative AI &amp; Red Hat</li></ul></div>
+          <div class="exp-item reveal reveal-delay-1"><div class="exp-period">2025</div><div class="exp-role">Innovation Award — TIFAN Competition</div><div class="exp-org">Technology Innovation Fair</div><ul class="exp-desc"><li>Designed and developed an automated sapling plantation machine</li><li>Recognized for strong problem-solving and real-world impact</li><li>Demonstrated applied engineering at an industry-facing competition</li></ul></div>
+          <div class="exp-item reveal reveal-delay-2"><div class="exp-period">2024 — Present</div><div class="exp-role">Open Source Contributor</div><div class="exp-org">GitHub — github.com/shruti2875</div><ul class="exp-desc"><li>Contributing to open source repositories and community projects</li><li>Maintaining personal project portfolio with public codebases</li></ul></div>
+          <div class="exp-item reveal reveal-delay-3"><div class="exp-period">2024</div><div class="exp-role">Google Cloud Hands-on Labs</div><div class="exp-org">Google Cloud Skills Boost</div><ul class="exp-desc"><li>Completed hands-on labs covering cloud computing fundamentals</li><li>Gained practical experience with GCP infrastructure and services</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume">
+    <div class="container">
+      <div class="section-label">Resume</div>
+      <div class="resume-wrap">
+        <div class="resume-card reveal">
+          <div class="resume-card-top">
+            <h2>Shruti Shejul</h2>
+            <p>Software Engineer &amp; Full Stack Developer</p>
+            <div class="resume-meta">
+              <div class="resume-meta-item"><span class="key">Location</span><span class="val">Chh. Sambhajinagar, MH</span></div>
+              <div class="resume-meta-item"><span class="key">Email</span><span class="val">shrutishejul30@gmail.com</span></div>
+              <div class="resume-meta-item"><span class="key">Degree</span><span class="val">BTech CS — Expected May 2027</span></div>
+            </div>
+          </div>
+          <div class="resume-card-bottom">
+            <p style="font-size:13px;color:var(--muted);">Open the PDF directly in a new browser tab.</p>
+            <div class="resume-actions">
+              <a href="./assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-resume-link style="padding:11px 22px;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M12 10v6m0 0l-3-3m3 3l3-3M3 17v3a2 2 0 002 2h14a2 2 0 002-2v-3"/></svg>
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <div class="contact-wrap">
+        <div class="contact-left reveal">
+          <h2>Let's build<br><em>something</em><br>together.</h2>
+          <p>Open to internships, full-time roles, freelance projects, and open source collaboration. Don't hesitate to reach out.</p>
+          <div class="contact-channels">
+            <a href="mailto:shrutishejul30@gmail.com" class="contact-channel"><div class="contact-channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div class="contact-channel-info"><div class="label">Email</div><div class="value">shrutishejul30@gmail.com</div></div><div class="contact-channel-arrow">→</div></a>
+            <a href="https://www.linkedin.com/in/shrutishejul" target="_blank" rel="noopener" class="contact-channel"><div class="contact-channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div><div class="contact-channel-info"><div class="label">LinkedIn</div><div class="value">linkedin.com/in/shrutishejul</div></div><div class="contact-channel-arrow">→</div></a>
+            <a href="https://github.com/shruti2875" target="_blank" rel="noopener" class="contact-channel"><div class="contact-channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></div><div class="contact-channel-info"><div class="label">GitHub</div><div class="value">github.com/shruti2875</div></div><div class="contact-channel-arrow">→</div></a>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <form class="contact-form">
+            <div class="form-group"><label class="form-label" for="fname">Your name</label><input type="text" id="fname" class="form-input" placeholder="Alex Johnson" /></div>
+            <div class="form-group"><label class="form-label" for="femail">Email address</label><input type="email" id="femail" class="form-input" placeholder="alex@company.com" /></div>
+            <div class="form-group"><label class="form-label" for="fmsg">Message</label><textarea id="fmsg" class="form-textarea" placeholder="Tell me about the opportunity or project…"></textarea></div>
+            <button type="submit" class="form-submit" id="submitBtn">Send message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">SS.</div>
+    <div class="footer-copy">© 2025 Shruti Shejul — Built with precision.</div>
+    <div class="footer-links">
+      <a href="https://github.com/shruti2875" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/shrutishejul" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:shrutishejul30@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>
